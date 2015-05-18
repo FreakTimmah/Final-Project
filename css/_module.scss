@@ -1,0 +1,73 @@
+/* Module.scss */
+
+header[role="banner"] {
+    background: url('../img/Desbot_Banner7-01.jpg') center no-repeat;
+    background-size: cover;
+    height: 20vh;
+    text-align: center;
+    @media screen and (max-width: $mobile) {
+         height: 20vh; 
+    }
+}
+
+nav[role="navigation"] {
+    position:absolute;
+    right: 30px;
+    top: 100px;
+    bottom: 10px;
+}
+
+.main-about-text {
+    margin-top: 20px;
+    column-count: 1;
+    column-gap: 20px;
+}
+
+.resume {
+    margin-top: auto;
+    column-count: 1;
+    column-gap: 20px;
+    margin: 0 10em 0 5em;
+    align-content: stretch;
+}
+
+.resume indent {
+    text-indent: 1em;
+    margin-top: 20px;
+    column-count: 1;
+    column-gap: 20px;
+    margin: 0;
+    align-content: stretch;
+}
+
+///.main-about-text p:first-of-type {
+    //margin-top: 0;
+    //column-count: 1;
+
+.main-about-text p{
+    margin-top: 20px;
+    column-count: 1;
+}
+
+.main-about-text p:last-of-type {
+    margin-bottom: 0;
+}
+
+.portfolio img {
+    align-content: stretch;
+    
+    }
+    
+.main-portfolio img {
+    filter: grayscale(1);
+    transition: all 300ms ease-in-out;
+    &:hover{
+        filter:grayscale(0);
+        transition: all 300ms ease-in-out;
+    }
+}
+
+.contentinfo {
+    background-color: #000;
+    color: #fff;
+}
